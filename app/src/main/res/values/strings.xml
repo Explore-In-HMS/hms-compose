@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">ExploreHmsCompose</string>
+    <string name="title_feature_mapkit">Map Kit Feature</string>
 </resources>
