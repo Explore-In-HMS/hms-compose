@@ -2,54 +2,50 @@ package com.hms.explorehmscompose.ui.theme.onboarding
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
-import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.padding
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.hms.explorehmscompose.R
-import com.hms.explorehmscompose.ui.theme.*
+import com.hms.explorehmscompose.ui.theme.Body1
+import com.hms.explorehmscompose.ui.theme.Headline5
+import com.hms.explorehmscompose.ui.theme.Onboarding2Background
 
 @Preview
 @Composable
-fun FirstOnboardingScreen() {
+fun FourthOnboardingScreen(){
 
     Column(
         modifier = Modifier
             .fillMaxSize()
             .background(
-                brush = Background
+                brush = Onboarding2Background
             ),
-        verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally
-    ) {
+    ){
+
+        Image(painter = painterResource(id = R.drawable.bg_onboarding4),
+            contentDescription = null,
+            modifier = Modifier.padding(16.dp))
+
         Text(
-            text = stringResource(id = R.string.app_name_onboarding1),
-            style = Headline4,
-            modifier = Modifier.padding(16.dp)
-        )
-        Image(
-            painter = painterResource(id = R.drawable.app_logo),
-            contentDescription = "App logo",
-            modifier = Modifier.padding(16.dp)
-        )
-        Text(
-            text = stringResource(id = R.string.information_text_onboarding1),
+            text = stringResource(R.string.search_headline_onboarding4),
             style = Headline5,
             modifier = Modifier.padding(16.dp)
         )
         Text(
-            text = stringResource(id = R.string.app_information_onboarding1),
+            text = stringResource(id = R.string.search_info_onboarding4),
             style = Body1,
             modifier = Modifier.padding(16.dp)
         )
-
-        Spacer(modifier = Modifier.height(90.dp))
     }
 
 }

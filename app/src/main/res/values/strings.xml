@@ -890,4 +890,6 @@ Content decryption: Before a user plays the encrypted content, the client obtain
     <string name="keyring_service_example">Keyring Service Example</string>
     <string name="title_feature_navikit">NaviKit</string>
     <string name="tab_header_onboarding2">Tabbed Design</string>
+    <string name="header_onboarding5">Install</string>
+    <string name="info_message_onboarding6">Information icon indicates that related module is reference module.</string>
 </resources>
