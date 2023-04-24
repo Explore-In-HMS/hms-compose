@@ -1,5 +1,6 @@
 package com.hms.explorehmscompose.ui.theme
 
+import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
 
 val Purple200 = Color(0xFFBB86FC)
@@ -19,3 +20,18 @@ val ColorAccent = Color(0xFFffffff)
 val BackgroundGradient1 = Color(0xFFFEE3E3)
 val BackgroundGradient2 = Color(0xFFC3C3C9)
 val BackgroundGradient3 = Color(0xFFFFFFFF)
+
+val Background = Brush.verticalGradient(
+    colorStops = arrayOf(
+        0.0f to BackgroundGradient1,
+        0.7f to BackgroundGradient2,
+        0.8f to BackgroundGradient3
+    )
+)
+
+val Onboarding2Background = Brush.verticalGradient(
+    colorStops = arrayOf(
+        0.0f to BackgroundGradient1,
+        0.6f to BackgroundGradient3
+    )
+)

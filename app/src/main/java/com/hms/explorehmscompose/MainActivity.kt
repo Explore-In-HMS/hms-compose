@@ -135,7 +135,7 @@ fun MainScreen() {
                 modifier = Modifier
                     .fillMaxWidth()
                     .height(52.dp)
-                    .background(colorResource(id = R.color.purple_200)),
+                    .background(colorResource(id = R.color.purple_700)),
                 verticalArrangement = Arrangement.Center,
                 horizontalAlignment = Alignment.CenterHorizontally
             ) {

@@ -22,13 +22,7 @@ fun FirstOnboardingScreen() {
         modifier = Modifier
             .fillMaxSize()
             .background(
-                brush = Brush.verticalGradient(
-                    colorStops = arrayOf(
-                        0.0f to BackgroundGradient1,
-                        0.6f to BackgroundGradient2,
-                        0.8f to BackgroundGradient3
-                    )
-                )
+                brush = Background
             ),
         verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally
